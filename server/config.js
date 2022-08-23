@@ -5,7 +5,7 @@ const development = {
 };
 
 const production = {
-  host: 'https://arduino-sockets.herokuapp.com', // Replace
+  host: 'https://vast-spire-72900.herokuapp.com/', // Replace
   namespace: 'arduino' // For socket.io
 };
 
