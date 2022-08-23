@@ -1,6 +1,6 @@
 import './style.css';
 import io from 'socket.io-client';
-import { url } from '../config';
+import { url } from '../server/config';
 
 (function() {
 
@@ -29,7 +29,7 @@ import { url } from '../config';
     };
 
     // Connect to the socket server
-    const socket = io.connect(url);
+    const socket = io('https://vast-spire-72900.herokuapp.com/');
     
     // Turn off the LED when the page loads
     socket.emit('led:off');
